@@ -9,12 +9,27 @@ console.log("Aufgabe 1")
 // Es soll das Volumen eines Würfels in Quadratzentimeter (cm3) ausgegeben werden. Arbeiten Sie mit einem Objekt und sprechenden Eigenschaften.
 // Geben Sie das Volumen in einem Antwortsatz auf der Konsole aus.
 
+let hoehe= 30
+let breite= 30
+let tiefe= 30
+
+console.log("Das Volumen des Würfels beträgt " +hoehe * + breite * + tiefe+ " cm3." )
+
+
+
+
 
 
 
 // 1b 
 // Wenn das Volumen 1000 oder mehr Quadratzentimeter beträgt soll eine Meldung auf der Konsole ausgegeben werden, die besagt,
 // dass das Volumen 1000 oder mehr Quadratzentimeter beträgt.
+
+let volumen= hoehe*breite*tiefe
+
+if(volumen>1000){
+    console.log("das Volumen beträgt mehr als 1000 cm3")
+}
 
 
 
@@ -33,18 +48,42 @@ console.log("Aufgabe 2")
 // 2a)
 // Definieren Sie die class
 
+class Zeugnis{
+    constructor(){
+        this.Deutsch
+        this.Mathe
+        this.Englisch
+        this.Politik
+        this.Sport
+        this.Bwl
+        this.Nachname
+        this.Vorname
+
+
+    }
+}
+
+
 
 
 // 2b)
 // Deklarieren, Instanziieren und Initialisieren Sie ein Objekt von der Zeignisklasse.
 
-
+let zeugnis1= new Zeugnis()
+zeugnis1.Deutsch= 2
+zeugnis1.Mathe= 3
+zeugnis1.Englisch= 1
+zeugnis1.Politik= 2
+zeugnis1.Sport= 1
+zeugnis1.Bwl= 3
+zeugnis1.Nachname= "Peters"
+zeugnis1.Vorname= "Jens"
 
 
 // 2c)
 // Geben Sie die Eigenschaftswerte Ihres Objekts auf der Konsole aus.
 
-
+console.log(" Die Noten des Schülers " + zeugnis1.Nachname + zeugnis1.Vorname +" sind folgende: Deutsch:" + zeugnis1.Deutsch+ " ,Mathe:" + zeugnis1.Mathe+ " ,Englisch:"+zeugnis1.Englisch +" ,Politik:" + zeugnis1.Politik+ " ,Sport:" + zeugnis1.Sport+ " ,Bwl:"+ zeugnis1.Bwl)
 
 // 2d) NUR KLAUSURSCHREIBER
 // Berechnen Sie die Durchnittsnote Ihres Objekts. Geben Sie die Durchschnittsnote auf der Konsole aus.
@@ -86,6 +125,11 @@ console.log("Aufgabe 3")
 // 3a)
 // Deklarieren, Instanziieren Sie ein Objekt mit allen genannten Eigenschaften. 
 
+let produkt= "Zeitung"
+let nettoRechnungsbetrag= 370
+let MwSt= 8
+
+
 
 
 
@@ -93,10 +137,16 @@ console.log("Aufgabe 3")
 // Initialisieren Sie Ihr Objekt mit den gegebenen Werten. 
 // Geben Sie die einen Anwortsatz auf der Konsole aus.
 
-
+if (produkt="Zeitung") {
+    console.log("Die MwSt beträgt 7%")
+} else {
+    console.log(" Die MwSt beträgt 19%")
+}
 
 // 3c)
 // Berechnen Sie die MwSt in einer sprechenden Variablen. Geben Sie einen Anwortsatz auf der Konsole aus.
+
+console.log( nettoRechnungsbetrag * 1.07 +"€.")
 
 
 
